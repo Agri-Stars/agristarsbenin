@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nom": "Ananas bio extra",
+    "photo": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=500&q=60",
+    "prix": "700 FCFA/kg",
+    "categorie": "fruits",
+    "producteur": "Aurèle Agossou",
+    "whatsapp": "22997123456"
+  },
+  {
+    "id": 2,
+    "nom": "Concentré de tomate",
+    "photo": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=500&q=60",
+    "prix": "1 200 FCFA/bouteille",
+    "categorie": "transformation",
+    "producteur": "Safiatou Aïvodji",
+    "whatsapp": "22998123456"
+  },
+  {
+    "id": 3,
+    "nom": "Œufs frais",
+    "photo": "images/éleveur-poules-pondeuses-Abomey-calavi.jpeg",
+    "prix": "150 FCFA/œuf",
+    "categorie": "animaux",
+    "producteur": "Kévin Gbèto",
+    "whatsapp": "22999123456"
+  }
+]

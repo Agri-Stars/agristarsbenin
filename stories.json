@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titre": "De l’échec à 5 000 plants d’ananas",
+    "photo": "images/aurèle_agossou.png",
+    "resume": "Aurèle a transformé un échec céréalier en succès fruitier.",
+    "histoire": "Après avoir tout perdu avec le maïs en 2021, Aurèle se tourne vers l’ananas bio. Aujourd’hui, ses 5 000 plants nourrissent 12 familles et exportent vers le Nigeria."
+  },
+  {
+    "id": 2,
+    "titre": "Safiatou, la reine de la tomate",
+    "photo": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=60",
+    "resume": "Elle a réduit le gaspillage de 40 % dans sa région.",
+    "histoire": "Safiatou a lancé son unité de transformation avec 200 000 FCFA. Deux ans plus tard, elle achète 3 tonnes de tomate par semaine à 120 petits producteurs."
+  }
+]
