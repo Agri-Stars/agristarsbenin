@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- ACCUEIL -->
+  <url>
+    <loc>https://agri-stars.github.io/agristarsbenin/</loc>
+    <image:image>
+      <image:loc>https://agri-stars.github.io/agristarsbenin/images/banniere-accueil.jpg</image:loc>
+      <image:title>AgriStars Bénin – Bannière agriculture locale</image:title>
+      <image:caption>Bannière d’accueil du site AgriStars Bénin</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ENTREPRENEURS -->
+  <url>
+    <loc>https://agri-stars.github.io/agristarsbenin/entrepreneurs.html</loc>
+    <image:image>
+      <image:loc>https://agri-stars.github.io/agristarsbenin/images/nicanor.jpg</image:loc>
+      <image:title>Nicanor Hounga – Producteur maraîcher bio Adjohoun</image:title>
+      <image:caption>Nicanor cultive des légumes bio sur 3 ha et emploie 8 jeunes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- PRODUITS -->
+  <url>
+    <loc>https://agri-stars.github.io/agristarsbenin/produits.html</loc>
+    <image:image>
+      <image:loc>https://agri-stars.github.io/agristarsbenin/images/ananas-bio.jpg</image:loc>
+      <image:title>Ananas bio extra – Allada Bénin</image:title>
+      <image:caption>Ananas cultivé sans produits chimiques, disponible à la ferme.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- SUCCESS STORIES -->
+  <url>
+    <loc>https://agri-stars.github.io/agristarsbenin/stories.html</loc>
+    <image:image>
+      <image:loc>https://agri-stars.github.io/agristarsbenin/images/success-aurele.jpg</image:loc>
+      <image:title>Aurèle – 5 000 plants d’ananas bio</image:title>
+      <image:caption>Aurèle a transformé un échec céréalier en succès fruitier.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ACTUALITÉS -->
+  <url>
+    <loc>https://agri-stars.github.io/agristarsbenin/articles.html</loc>
+    <image:image>
+      <image:loc>https://agri-stars.github.io/agristarsbenin/images/actualite-lancement.jpg</image:loc>
+      <image:title>Lancement officiel d’AgriStars Bénin</image:title>
+      <image:caption>Photo de l’événement de lancement de la plateforme AgriStars.</image:caption>
+    </image:image>
+  </url>
+</urlset>

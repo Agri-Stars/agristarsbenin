@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "titre": "Lancement officiel d’AgriStars Bénin",
+    "photo": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=60",
+    "resume": "La plateforme qui met les jeunes agripreneurs sous les feux des projecteurs est en ligne.",
+    "categorie": "actualite",
+    "date": "2025-09-10"
+  },
+  {
+    "id": 2,
+    "titre": "FNDA : APPEL A PROJETS 2025",
+    "photo": "images/projet_fnda.png",
+    "resume": "Le Fonds National de Développement Agricole (FNDA) lance un appel à projets pour le financement de projets d'investissements agricoles ou des services non financiers sous forme de subventions intégrales ou partielles au profit des mairies et associations intercommunales, des exploitants agricoles individuels porteurs de projets innovants, les Organisations Professionnelles Agricoles (OPA) ou faîtières d'OPA régulièrement immatriculées, des Micro, Petites et Moyennes Entreprises régulièrement enregistrées et évoluant ou ayant des liens d'affaires prouvés avec les acteurs du secteur agricole. Les projets éligibles doivent cibler l'une des filières prioritaires promues en République du Bénin et concerner les investissements agricoles, la recherche agricole appliquée et sa vulgarisation, la facilitation et le renforcement de capacités ainsi que la certification et la mise en marché. Une attention particulière sera portée aux projets relatifs à l'aviculture.Consulter l'avis d'appels à projets.Consultez l'avis d'appel à projets: https://fnda.agriculture.gouv.bj/news/fnda-appel-a-projets-2025",
+    "categorie": "actualite",
+    "date": "2025-09-08"
+  }
+]

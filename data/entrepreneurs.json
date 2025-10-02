@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nom": "Aurèle AGOSSOU",
+    "photo": "images/Producteurs-ananas-bio-allada.png",
+    "activite": "Production d’ananas bio",
+    "commune": "Allada",
+    "bio": "Jeune ingénieur de retour au pays, Aurèle cultive 5 ha d’ananas sans produits chimiques et emploie 12 personnes.",
+    "whatsapp": "2290156933904"
+  },
+  {
+    "id": 2,
+    "nom": "Safiatou AIVODJI",
+    "photo": "images/Productrice-Transformation-de-tomate-Bohicon.jpg",
+    "activite": "Transformation de tomate",
+    "commune": "Bohicon",
+    "bio": "Safiatou produit du concentré de tomate, du ketchup et des sauces vendus dans 3 régions du Bénin.",
+    "whatsapp": "2290156933904"
+  },
+  {
+    "id": 3,
+    "nom": "Kévin GBETO",
+    "photo": "images/éleveur-poules-pondeuses-Abomey-calavi.jpeg",
+    "activite": "Élevage de poules pondeuses",
+    "commune": "Abomey-Calavi",
+    "bio": "Kévin gère 1 200 poules pondeuses et fournit des œufs frais aux marchés de Cotonou.",
+    "whatsapp": "2290156933904"
+  },
+{
+    "id": 4,
+    "nom": "Nicanor HOUNGA",
+    "photo": "images/Producteur-maraicher-Adjohoun.jpg",
+    "activite": "Production maraichère",
+    "commune": "Adjohoun",
+    "bio": "Nicanor est un techninien agronome passioné et engagé pour la valorisation des ressources agricoles de la vallée de l'Ouémé. Il produit du piment rond en système agro-écologique intensif et de la tomate sous serre moderne.",
+    "whatsapp": "2290161674360"
+  }
+]

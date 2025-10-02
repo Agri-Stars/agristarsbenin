@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agri-stars.github.io/agristarsbenin/sitemap.xml
+Sitemap: https://agri-stars.github.io/agristarsbenin/image-sitemap.xml

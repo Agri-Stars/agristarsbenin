@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalogue produits agricoles locaux | AgriStars Bénin</title>
+  <meta name="description" content="Achetez fruits, légumes, œufs, produits transformés du Bénin directement chez le producteur. Prix transparent, livraison possible.">
+  <link rel="canonical" href="https://agri-stars.github.io/agristarsbenin/produits.html">
+  <meta property="og:image" content="https://agri-stars.github.io/agristarsbenin/images/ananas-bio.jpg" />
+  <meta property="og:image:alt" content="Ananas bio extra – Allada Bénin" />
+  <meta property="og:title" content="Catalogue produits agricoles locaux | AgriStars Bénin" />
+  <meta property="og:description" content="Achetez fruits, légumes, œufs, produits transformés du Bénin directement chez le producteur." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://agri-stars.github.io/agristarsbenin/produits.html" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">AgriStars Bénin</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="entrepreneurs.html">Entrepreneurs</a>
+      <a href="produits.html" class="active">Produits</a>
+      <a href="stories.html">Success Stories</a>
+      <a href="articles.html">Actualités</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Catalogue de produits</h1>
+    <p class="intro">Le catalogue AgriStars vous présente une sélection de produits agricoles locaux, issus directement des mains de nos entrepreneurs. Fruits tropicaux, légumes frais, céréales, tubercules, produits d'élevage, poissons, produits transformés…
+Chaque produit a sa fiche détaillée avec photos, prix, localisation et contacts des producteurs. Plus besoin de courir les marchés : commandez directement chez le producteur et recevez vos produits frais.
+Nos producteurs respectent les normes de qualité et proposent des prix compétitifs. Que vous soyez restaurateur, revendeur ou particulier, trouvez vos produits agricoles béninois facilement.
+</p>
+
+    <!-- Filtre -->
+    <div class="filters">
+      <select id="filtreCategorie">
+        <option value="">Toutes catégories</option>
+        <option>fruits</option>
+        <option>légumes</option>
+        <option>animaux</option>
+        <option>transformation</option>
+      </select>
+    </div>
+
+    <!-- Grille -->
+    <section id="grille-produits" class="grid"></section>
+  </main>
+
+  <footer>
+  <p>
+    Partenaires :
+    <a href="https://agriculture.gouv.bj/" target="_blank" rel="noopener">Ministère Agriculture Bénin</a> |
+    <a href="https://www.fao.org/benin/" target="_blank" rel="noopener">FAO Bénin</a> |
+    <a href="https://www.afd.fr/fr/page-region-pays/benin" target="_blank" rel="noopener">AFD Bénin</a>
+  </p>
+  <p>&copy; 2025 AgriStars Bénin – Tous droits réservés</p>
+</footer>
+
+  <script type="module" src="js/produits.js"></script>
+</body>
+</html>
