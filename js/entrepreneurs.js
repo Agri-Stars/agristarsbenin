@@ -6,7 +6,7 @@ const selAct = document.getElementById('filtreActivite');
 let data = [];
 
 async function load() {
-  const res = await fetch('../data/entrepreneurs.json');
+  const res = await fetch('./data/entrepreneurs.json');
   data = await res.json();
   alimenterSelecteurs();
   render(data);
