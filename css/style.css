@@ -55,10 +55,7 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  background: url("../images/bannière-agriculture-Bénin.jpg") center/cover no-repeat;
-  text-align: center;
-  padding: 80px 20px;
-  color: var(--blanc);
+  /* pas d’image de fond : le carrousel la remplace */
 }
 
 .hero h1 {
