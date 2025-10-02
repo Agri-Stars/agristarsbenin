@@ -32,22 +32,53 @@
 
   <main>
     <section class="hero">
-      <h1>AgriStars Bénin</h1>
-      <p class="tagline">La vitrine des talents agricoles</p>
-      <p class="hook">
-        L'agriculture béninoise regorge de talents exceptionnels qui nourrissent notre nation et façonnent notre économie.
+  <!-- CARROUSEL D’IMAGES -->
+  <div class="carousel">
+    <div class="slide active">
+      <img src="images/Agriculteurs-modernes-Bénin(b1).png" alt="Carrousel AgriStars Bénin – Image 1" width="1920" height="1080">
+    </div>
+    <div class="slide">
+      <img src="images/Produits agricoles-phares-du-Bénin(b2).png" alt="Carrousel AgriStars Bénin – Image 2" width="1920" height="1080">
+    </div>
+    <div class="slide">
+      <img src="images/Coopératives-agricoles-et-digitalisation(b3).png" alt="Carrousel AgriStars Bénin – Image 3" width="1920" height="1080">
+    </div>
+    <div class="slide">
+      <img src="images/Investisseurs-agriculture-béninoise(b4).png" alt="Carrousel AgriStars Bénin – Image 4" width="1920" height="1080">
+    </div>
+    <div class="slide">
+      <img src="images/Vallée de l'Ouémé-agriculture(b5).png" alt="Carrousel AgriStars Bénin – Image 5" width="1920" height="1080">
+    </div>
+  </div>
+
+  <!-- TEXTE HERO (inchangé) -->
+  <div class="hero-text">
+    <h1>AgriStars Bénin</h1>
+    <p class="tagline">La vitrine des talents agricoles</p>
+    <p class="hook">
+      L'agriculture béninoise regorge de talents exceptionnels qui nourrissent notre nation et façonnent notre économie.
+    </p>
+    <div class="presentation">
+      <p>
+        AgriStars Bénin est la première plateforme dédiée à la valorisation et la promotion de nos entrepreneurs agricoles. Nous connectons leurs initiatives aux marchés, partenaires et investisseurs pour booster la visibilité et la croissance de l'agriculture béninoise. Fruits, légumes, céréales, produits d'élevage ou transformés : trouvez tout ce dont vous avez besoin.
+        Fini les circuits compliqués ! Notre plateforme élimine les intermédiaires et permet aux restaurants, magasins et exportateurs d'acheter directement chez les producteurs.
       </p>
-      <div class="presentation">
-  <p>
-    AgriStars Bénin est la première plateforme dédiée à la valorisation et la promotion de nos entrepreneurs agricoles. Nous connectons leurs initiatives aux marchés, partenaires et investisseurs pour booster la visibilité et la croissance de l'agriculture béninoise. Fruits, légumes, céréales, produits d'élevage ou transformés : trouvez tout ce dont vous avez besoin.
-Fini les circuits compliqués ! Notre plateforme élimine les intermédiaires et permet aux restaurants, magasins et exportateurs d'acheter directement chez les producteurs.
-  </p>
-</div>
-      <div class="cta-group">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1z4qgNNppb5-E8aVoe3dSqVKkwiz8bNQt5mAoJNYbAAXiCA/viewform" target="_blank" class="btn primary">Rejoindre la communauté</a>
-        <a href="contact.html" class="btn secondary">Nous soutenir</a>
-      </div>
-    </section>
+    </div>
+    <div class="cta-group">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1z4qgNNppb5-E8aVoe3dSqVKkwiz8bNQt5mAoJNYbAAXiCA/viewform" target="_blank" class="btn primary">Rejoindre la communauté</a>
+      <a href="contact.html" class="btn secondary">Nous soutenir</a>
+    </div>
+  </div>
+
+  <!-- POINTS DE NAVIGATION -->
+  <div class="carousel-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
 
     <section class="blocks">
       <a href="produits.html" class="block">
@@ -74,5 +105,31 @@ Fini les circuits compliqués ! Notre plateforme élimine les intermédiaires et
   </p>
   <p>&copy; 2025 AgriStars Bénin – Tous droits réservés</p>
 </footer>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let current = 0;
+
+  function showSlide(n) {
+    slides.forEach((s, i) => s.classList.toggle('active', i === n));
+    dots.forEach((d, i) => d.classList.toggle('active', i === n));
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  // Défilement automatique toutes les 5 secondes
+  setInterval(nextSlide, 5000);
+
+  // Clic sur les points
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      current = index;
+      showSlide(current);
+    });
+  });
+</script>
 </body>
 </html>
