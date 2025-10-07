@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://agri-stars.github.io/agristarsbenin/sitemap.xml
-Sitemap: https://agri-stars.github.io/agristarsbenin/image-sitemap.xml
+Sitemap: https://agri-stars.github.io/agristarsbenin/sitemap.txt
+Sitemap: https://agri-stars.github.io/agristarsbenin/image-sitemap.txt
