@@ -1,33 +1,249 @@
 [
   {
     "id": 1,
-    "nom": "Aurèle AGOSSOU",
-    "photo": "images/Producteurs-ananas-bio-allada.png",
-    "activite": "Production d’ananas bio",
-    "commune": "Allada",
-    "bio": "Jeune ingénieur de retour au pays, Aurèle cultive 5 ha d’ananas sans produits chimiques et emploie 12 personnes.",
-    "whatsapp": "2290156933904"
+    "nom": "KPOHOUEKAN Gratien",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production de animale",
+    "commune": "Adjohoun",
+    "bio": "Jeune entrepreneur agricole exerçant dans la production animale et végétale. Il est le responsable de l'entreprise Bon Berger, spécialisé dans la production des porcs des race améliorée.",
+    "whatsapp": "2290169699708"
   },
   {
     "id": 2,
-    "nom": "Safiatou AIVODJI",
-    "photo": "images/Productrice-Transformation-de-tomate-Bohicon.jpg",
-    "activite": "Transformation de tomate",
-    "commune": "Bohicon",
-    "bio": "Safiatou produit du concentré de tomate, du ketchup et des sauces vendus dans 3 régions du Bénin.",
-    "whatsapp": "2290156933904"
+    "nom": "Wanvoegbe Abraham ",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Adja Ouèrè",
+    "bio": "Entrepreneur agricoles spécialisé dans la production de maïs",
+    "whatsapp": "2290157909776"
   },
   {
     "id": 3,
-    "nom": "Kévin GBETO",
-    "photo": "images/éleveur-poules-pondeuses-Abomey-calavi.jpeg",
-    "activite": "Élevage de poules pondeuses",
-    "commune": "Abomey-Calavi",
-    "bio": "Kévin gère 1 200 poules pondeuses et fournit des œufs frais aux marchés de Cotonou.",
-    "whatsapp": "2290156933904"
+    "nom": "GANHOUMETO Armel ",
+    "photo": "images/Producteur-lapin-Adjarra-Ayidoté Armel GANHOUMETO-(03).jpg",
+    "activite": "Production animmale",
+    "commune": "Adjarra",
+    "bio": "Entrepreneur agricole. Promoteur de la Ferme mahulomé Agro business.",
+    "whatsapp": "2290155552842"
   },
 {
     "id": 4,
+    "nom": "ADOME Moïse Fèmi ",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune":"Adjarra",
+    "bio": "Responsable de l'entreprise 'Les Gourmandises de Ismo' spécaliséé dans la transformaion agralimentaire et la pâtisserie.",
+    "whatsapp": "2290197836992"
+  },
+{
+    "id": 5,
+    "nom": "BODJI SELOGBO MARCELLIN",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Adjohoun",
+    "bio": "Entrepreneur agricole. Promoteur de 'DIEU SOUVIENS TOI DE MOI'.",
+    "whatsapp": "2290197207328"
+  },
+  {
+    "id": 6,
+    "nom": "GBENOU Paul",
+    "photo": "images/Producteur-agricole-Maïs-Bonou-GBENOU Paul-(06).jpg",
+    "activite": "Production végétale",
+    "commune": "Bonou",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290166279790"
+  },
+  {
+    "id": 7,
+    "nom": "GOUDAVO Sèdjro Etienne",
+    "photo": "images/Transformation-agroalimentaire-gari-GOUDAVO Sèdjro Etienne-(07).jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Bonou",
+    "bio": "Entrepreneur agricole. Promoteur de 'Les délices production et services'.",
+    "whatsapp": "2290146270823"
+  },
+  {
+    "id": 8,
+    "nom": "HOUNSINOU Jesutin Urbain ",
+    "photo": "images/éleveur-poules-pondeuses-Abomey-calavi.jpeg",
+    "activite": "Production animmale",
+    "commune": "Dangbo",
+    "bio": "Entrepreneur agricole. Promoteur de 'MIEA Agro-service'.",
+    "whatsapp": "2290162667682"
+  },
+  {
+    "id": 9,
+    "nom": "ABOU Dramane ",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Tchaourou",
+    "bio": "Entrepreneur agricole. Promoteur de 'WANRADO FaDra AFRIBénin', entreprise spécialisée dans la production de soja.",
+    "whatsapp": "2290195398508"
+  },
+  {
+    "id": 10,
+    "nom": "KPODOHOUN Aurel ",
+    "photo": "images/Agriculteur-moderne-Aurel KPODOHOUN-(10).png",
+    "activite": "Production végétale",
+    "commune": "Abomey-Calavi",
+    "bio": "Entrepreneur agricole. Promoteur de 'Wald House'.",
+    "whatsapp": "229152652302"
+  },
+  {
+    "id": 11,
+    "nom": "KOTO Love",
+    "photo": "images/Producteur-agricole-adjohoun-Love Fitila KOTO-(11).jpg",
+    "activite": "Production végétale",
+    "commune": "Adjohoun",
+    "bio": "Entrepreneur agricole. Promoteur de la coopérative CoDPA- BÉNIN GLÉGNON.",
+    "whatsapp": "2290162748001"
+  },
+  {
+    "id": 12,
+    "nom": "Souradji Idrissou",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Abomey-Calavi",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290156933904"
+  },
+  {
+    "id": 13,
+    "nom": "HOUNVENOU DJIDJOHO JEAN BAPTISTE",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Porto-novo",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290197521328"
+  },
+  {
+    "id": 14,
+    "nom": "HOUNDJO Godonou Clément",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production animmale",
+    "commune": "Natitingou",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290152673739"
+  },
+  {
+    "id": 15,
+    "nom": "CHABI Abel Olabiyi ",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Ouesse",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290167447621"
+  },
+  {
+    "id": 16,
+    "nom": "HOUEZE Boèz",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Adjohoun",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290141130729"
+  },
+  {
+    "id": 17,
+    "nom": "VEGLO Michel ",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Bohicon",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290197800304"
+  },
+  {
+    "id": 18,
+    "nom": "HOUENOU SAÏDI ",
+    "photo": "images/Producteur-agricole-Adjohoun-bénin-Saïdi HOUENOU-(18).jpg",
+    "activite": "Production végétale",
+    "commune": "Adjohoun",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290196494350"
+  },
+  {
+    "id": 19,
+    "nom": "BIO SANDA A.Razak",
+    "photo": "images/Elevage-lapin-Abomey-Calavi-Razak Bio-(19).jpg",
+    "activite": "Production animmale",
+    "commune": "Abomey-Calavi",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290156759383"
+  },
+  {
+    "id": 20,
+    "nom": "BOTON Sébastien",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Adjohoun",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290197544412"
+  },
+  {
+    "id": 21,
+    "nom": "ADIKPONSI LUCRESSE ",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Abomey-Calavi",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290165911080"
+  },
+  {
+    "id": 22,
+    "nom": "NINKPO G. Joël",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production végétale",
+    "commune": "Bonou",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290161864120"
+  },
+  {
+    "id": 23,
+    "nom": "Houssou Michaël babatoundé",
+    "photo": "images/Tranformation-agroalimentaire-Adjarra-Michaël Houssou-(23).jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Adjarra",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290169717212"
+  },
+  {
+    "id": 24,
+    "nom": "ADANVOESSI Sèdé Walatta Flora",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Adjarra",
+    "bio": "Entrepreneur agricole",
+    "whatsapp": "2290191733182"
+  },
+  {
+    "id": 25,
+    "nom": "DJOSSOU SÈMANTÊ FIACRE",
+    "photo": "images/Tranformation-agroalimentaire-gari-bénin- Fiacre Djossou-(25).jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Adja Ouèrè",
+    "bio": "Entrepreneur agricole. Responsable de BENIN GARI-1 SARL,un des profesionnel de la tranformation du manioc au Bénin et en Afrique de l'Ouest. Depuis 2018, elle produit et distribue des derivés de manioc de qualité supérieure.Ses produits sont exporté vers la France, la Republique Démocratique du Congo, le Burkina Faso, le Nigéria, le Togo, le Ghana, le Gabon, la Guinée Conakry...",
+    "whatsapp": "2290196528545"
+  },
+  {
+    "id": 26,
+    "nom": "KINHA Rekomoni",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Production de animale",
+    "commune": "Ouinhi",
+    "bio": "Rekomoni est un technicien agronome engagé dans l'innovation agricole durable. Il valorise les ressources locales à travers la production d'asticots de mouches soldat noirs pour l'alimentation animale et développe un système performant d'élevage de poulets locaux.",
+    "whatsapp": "2290164641676"
+  },
+  {
+    "id": 27,
+    "nom": "TOKPON Elie",
+    "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
+    "activite": "Transformation agroalimentaire",
+    "commune": "Adjohoun",
+    "bio": "Entrepreneur engagé et visionnaire, Monsieur Elie est un acteur de la transformation du manioc au Bénin. A travers la production et la valorisation de ses dérivés, il participe à la dynamisation du secteur agroalimentaire local. Il est coordonnateur de groupements de femmes transformatrices du manioc.",
+    "whatsapp": "2290197518818"
+  },
+  {
+    "id": 28,
     "nom": "Nicanor HOUNGA",
     "photo": "images/Producteur-maraicher-Adjohoun.jpg",
     "activite": "Production maraichère",
