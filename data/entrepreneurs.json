@@ -21,7 +21,7 @@
     "id": 3,
     "nom": "GANHOUMETO Armel ",
     "photo": "images/Producteur-lapin-Adjarra-Ayidoté Armel GANHOUMETO-(03).jpg",
-    "activite": "Production animmale",
+    "activite": "Production animale",
     "commune": "Adjarra",
     "bio": "Entrepreneur agricole. Promoteur de la Ferme mahulomé Agro business.",
     "whatsapp": "2290155552842"
@@ -32,7 +32,7 @@
     "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
     "activite": "Transformation agroalimentaire",
     "commune":"Adjarra",
-    "bio": "Responsable de l'entreprise 'Les Gourmandises de Ismo' spécaliséé dans la transformaion agralimentaire et la pâtisserie.",
+    "bio": "Responsable de l'entreprise Les Gourmandises de Ismo spécaliséé dans la transformaion agralimentaire et la pâtisserie.",
     "whatsapp": "2290197836992"
   },
 {
@@ -41,7 +41,7 @@
     "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
     "activite": "Production végétale",
     "commune": "Adjohoun",
-    "bio": "Entrepreneur agricole. Promoteur de 'DIEU SOUVIENS TOI DE MOI'.",
+    "bio": "Entrepreneur agricole. Promoteur de DIEU SOUVIENS TOI DE MOI.",
     "whatsapp": "2290197207328"
   },
   {
@@ -59,16 +59,16 @@
     "photo": "images/Transformation-agroalimentaire-gari-GOUDAVO Sèdjro Etienne-(07).jpg",
     "activite": "Transformation agroalimentaire",
     "commune": "Bonou",
-    "bio": "Entrepreneur agricole. Promoteur de 'Les délices production et services'.",
+    "bio": "Entrepreneur agricole. Promoteur de Les Délices Production et Services.",
     "whatsapp": "2290146270823"
   },
   {
     "id": 8,
     "nom": "HOUNSINOU Jesutin Urbain ",
     "photo": "images/éleveur-poules-pondeuses-Abomey-calavi.jpeg",
-    "activite": "Production animmale",
+    "activite": "Production animale",
     "commune": "Dangbo",
-    "bio": "Entrepreneur agricole. Promoteur de 'MIEA Agro-service'.",
+    "bio": "Entrepreneur agricole. Promoteur de MIEA Agro-service.",
     "whatsapp": "2290162667682"
   },
   {
@@ -77,7 +77,7 @@
     "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
     "activite": "Production végétale",
     "commune": "Tchaourou",
-    "bio": "Entrepreneur agricole. Promoteur de 'WANRADO FaDra AFRIBénin', entreprise spécialisée dans la production de soja.",
+    "bio": "Entrepreneur agricole. Promoteur de WANRADO FaDra AFRIBénin, entreprise spécialisée dans la production de soja.",
     "whatsapp": "2290195398508"
   },
   {
@@ -86,7 +86,7 @@
     "photo": "images/Agriculteur-moderne-Aurel KPODOHOUN-(10).png",
     "activite": "Production végétale",
     "commune": "Abomey-Calavi",
-    "bio": "Entrepreneur agricole. Promoteur de 'Wald House'.",
+    "bio": "Entrepreneur agricole. Promoteur de WALD HOUSE.",
     "whatsapp": "229152652302"
   },
   {
@@ -120,7 +120,7 @@
     "id": 14,
     "nom": "HOUNDJO Godonou Clément",
     "photo": "images/Producteur-agriculture-agritars-bénin.jpg",
-    "activite": "Production animmale",
+    "activite": "Production animale",
     "commune": "Natitingou",
     "bio": "Entrepreneur agricole",
     "whatsapp": "2290152673739"
@@ -165,7 +165,7 @@
     "id": 19,
     "nom": "BIO SANDA A.Razak",
     "photo": "images/Elevage-lapin-Abomey-Calavi-Razak Bio-(19).jpg",
-    "activite": "Production animmale",
+    "activite": "Production animale",
     "commune": "Abomey-Calavi",
     "bio": "Entrepreneur agricole",
     "whatsapp": "2290156759383"
@@ -221,7 +221,7 @@
     "photo": "images/Tranformation-agroalimentaire-gari-bénin- Fiacre Djossou-(25).jpg",
     "activite": "Transformation agroalimentaire",
     "commune": "Adja Ouèrè",
-    "bio": "Entrepreneur agricole. Responsable de BENIN GARI-1 SARL,un des profesionnel de la tranformation du manioc au Bénin et en Afrique de l'Ouest. Depuis 2018, elle produit et distribue des derivés de manioc de qualité supérieure.Ses produits sont exporté vers la France, la Republique Démocratique du Congo, le Burkina Faso, le Nigéria, le Togo, le Ghana, le Gabon, la Guinée Conakry...",
+    "bio": "Entrepreneur agricole. Responsable de BENIN GARI-1 SARL,un des profesionnel de la tranformation du manioc au Bénin et en Afrique de l'Ouest. Depuis 2018, elle produit et distribue des derivés de manioc de qualité supérieure.Ses produits sont exportés vers la France, la Republique Démocratique du Congo, le Burkina Faso, le Nigéria, le Togo, le Ghana, le Gabon, la Guinée Conakry...",
     "whatsapp": "2290196528545"
   },
   {
