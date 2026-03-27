@@ -39,16 +39,16 @@ body {
 
 /* ===== TOPBAR ===== */
 .topbar {
-  background-color: var(--vert);
-  color: var(--blanc);
-  padding: 12px 20px;
+  background-color: #ffffff;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 999;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  z-index: 100;
+  min-height: 90px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 .topbar .logo {
