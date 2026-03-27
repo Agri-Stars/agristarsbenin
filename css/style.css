@@ -601,16 +601,32 @@ footer {
 /* ===== MOBILE NAVIGATION ===== */
 @media (max-width: 768px) {
   .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  background-color: var(--vert);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-  .topbar nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
+/* Desktop : nav visible */
+.topbar nav {
+  display: none; /* caché par défaut, Tailwind lg:flex prend le relais */
+}
+
+/* Mobile : logo centré */
+@media (max-width: 1023px) {
+  .topbar {
+    justify-content: space-between;
   }
+  .topbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
   .topbar nav a {
     font-size: 0.85rem;
