@@ -630,8 +630,9 @@ footer {
     transform: translateX(-50%);
   }
   .topbar .logo img {
-    width: 180px;
+    width: 220px;
     height: auto;
+    filter: brightness(1.1);
   }
   #hamburger-btn {
     position: absolute;
