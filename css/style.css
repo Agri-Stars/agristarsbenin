@@ -619,12 +619,25 @@ footer {
 /* Mobile : logo centré */
 @media (max-width: 1023px) {
   .topbar {
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
+    padding: 10px 16px;
+    min-height: 64px;
   }
   .topbar .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .topbar .logo img {
+    width: 180px;
+    height: auto;
+  }
+  #hamburger-btn {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
