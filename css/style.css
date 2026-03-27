@@ -5,6 +5,21 @@
   box-sizing: border-box;
 }
 
+/* Accessibilité : focus visible clavier */
+:focus-visible {
+  outline: 3px solid #1B4332;
+  outline-offset: 3px;
+}
+
+/* Réduire animation si utilisateur le préfère */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* ===== VARIABLES COULEURS ===== */
 :root {
   --vert: #3a6b4a;
@@ -172,43 +187,101 @@ footer {
   background-color: var(--blanc);
 }
 
-.grid {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+/* Line clamp pour les bios */
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
+/* Badges d'activité */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-production-vegetale {
+  background-color: #D8F3DC;
+  color: #1B4332;
+}
+
+.badge-production-animale {
+  background-color: #FFE5B4;
+  color: #8B4513;
+}
+
+.badge-transformation {
+  background-color: #E0F2FE;
+  color: #0369A1;
+}
+
+.badge-maraichere {
+  background-color: #FCE7F3;
+  color: #BE185D;
+}
+
+.badge-default {
+  background-color: #F3F4F6;
+  color: #374151;
+}
+
+/* Carte entrepreneur améliorée */
 .card {
   background: var(--blanc);
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #E8F4E8;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
 }
 
 .card img {
   width: 100%;
-  height: 160px;
+  height: 200px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 .card h3 {
-  margin: 12px 16px 4px;
-  font-size: 1.1rem;
+  margin: 16px 16px 8px;
+  font-size: 1.2rem;
   color: var(--vert);
+  font-weight: 700;
 }
 
-.card .act {
-  margin: 0 16px;
-  font-size: 0.9rem;
-  color: var(--terre);
+.card .badge {
+  margin: 0 16px 8px;
 }
 
 .card .bio {
   margin: 8px 16px 12px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
   flex-grow: 1;
+}
+
+.card .commune {
+  margin: 0 16px 12px;
+  font-size: 0.85rem;
+  color: #4A6741;
+  font-weight: 500;
 }
 
 .card .wa {
@@ -216,12 +289,39 @@ footer {
   background-color: #25d366;
   color: var(--blanc);
   text-align: center;
-  padding: 8px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
+.card .wa:hover {
+  background-color: #128C7E;
+}
+
+/* Fallback si pas de photo */
+.card .initials {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+
+.initials-production-vegetale { background: linear-gradient(135deg, #1B4332, #2D6A4F); }
+.initials-production-animale { background: linear-gradient(135deg, #D97706, #B45309); }
+.initials-transformation { background: linear-gradient(135deg, #0369A1, #0284C7); }
+.initials-maraichere { background: linear-gradient(135deg, #BE185D, #DB2777); }
+.initials-default { background: linear-gradient(135deg, #4B5563, #6B7280); }
 /* ===== PRODUITS ===== */
 .prix {
   font-weight: 700;
@@ -354,7 +454,54 @@ footer {
   max-width: 700px;
   line-height: 1.55;
 }
+/* ===== SKELETON LOADERS ===== */
+.skeleton-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #E8F4E8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
 
+.skeleton-img {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, #e8f4e8 25%, #d4ebd4 50%, #e8f4e8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton-line {
+  height: 14px;
+  border-radius: 6px;
+  margin: 12px 16px;
+  background: linear-gradient(90deg, #e8f4e8 25%, #d4ebd4 50%, #e8f4e8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton-line.short  { width: 50%; }
+.skeleton-line.medium { width: 70%; }
+.skeleton-line.long   { width: 90%; }
+.skeleton-line.btn    { height: 38px; border-radius: 8px; margin: 8px 16px 16px; }
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+/* ===== ANIMATIONS SCROLL ===== */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect des préférences utilisateur déjà défini dans le reset */
 /* ===== CARROUSEL HERO ===== */
 .hero {
   position: relative;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AgriStars Bénin – La vitrine des talents agricoles</title>
-  <meta name="description" content="AgriStars Bénin valorise les entrepreneurs agricoles : producteurs, produits locaux, success stories. Contact direct, prix transparent.">
+  <meta name="description" content="AgriStars Bénin : la vitrine numérique des entrepreneurs agricoles du Bénin. Trouvez producteurs bio, éleveurs, transformateurs. Contact direct WhatsApp, sans intermédiaires.">
   <link rel="canonical" href="https://agri-stars.github.io/agristarsbenin/">
   <meta property="og:image" content="https://agri-stars.github.io/agristarsbenin/images/banniere-accueil.jpg" />
   <meta property="og:image:alt" content="AgriStars Bénin – Bannière agriculture locale" />
@@ -22,30 +22,97 @@
 
   gtag('config', 'G-B9LWKY4MRM');
 </script>
-  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1B4332',
+          'primary-hover': '#2D6A4F',
+          secondary: '#D4AF37',
+          'bg-light': '#F8FAF6',
+          'text-main': '#0D1F16',
+          'text-muted': '#4A6741',
+          'badge-green': '#D8F3DC',
+          'border-card': '#E8F4E8',
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AgriStars Bénin",
+  "url": "https://agri-stars.github.io/agristarsbenin/",
+  "logo": "https://agri-stars.github.io/agristarsbenin/images/otJsFgg5T0CCnWtYJep9Rw@2k.webp",
+  "description": "Vitrine numérique des entrepreneurs agricoles du Bénin",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+229-01-61-67-43-60",
+    "contactType": "customer service",
+    "availableLanguage": ["French"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100086544470909"
+  ]
+}
+</script>
 </head>
 <a href="https://wa.me/2290161674360" class="whatsapp-float" target="_blank">
   💬
 </a>
 <body>
+  <!-- Skip link pour accessibilité -->
+  <a href="#contenu-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:z-50 focus:outline-none">
+    Aller au contenu principal
+  </a>
+  
   <header class="topbar">
-    <div class="logo">
-  <img src="images/otJsFgg5T0CCnWtYJep9Rw@2k.webp" alt="AgriStars Bénin">
-</div>
-    <nav>
-      <a href="index.html" class="active">Accueil</a>
-      <a href="a-propos.html">À propos</a>
-      <a href="entrepreneurs.html">Entrepreneurs</a>
-      <a href="produits.html">Produits</a>
-      <a href="stories.html">Success Stories</a>
-      <a href="articles.html">Actualités</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <div class="logo">
+    <img src="images/otJsFgg5T0CCnWtYJep9Rw@2k.webp" alt="AgriStars Bénin" loading="eager" width="150" height="50">
+  </div>
+  
+  <!-- Bouton hamburger mobile -->
+  <button id="hamburger-btn" class="lg:hidden text-white p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
 
-  <main>
+  <!-- Navigation desktop -->
+  <nav class="hidden lg:flex space-x-4">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="entrepreneurs.html">Entrepreneurs</a>
+    <a href="produits.html">Produits</a>
+    <a href="stories.html">Success Stories</a>
+    <a href="articles.html">Actualités</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Menu mobile overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden" aria-hidden="true">
+  <div class="absolute top-16 left-0 right-0 bg-primary shadow-lg">
+    <nav class="flex flex-col p-4 space-y-3">
+      <a href="index.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover active">Accueil</a>
+      <a href="a-propos.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover">À propos</a>
+      <a href="entrepreneurs.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover">Entrepreneurs</a>
+      <a href="produits.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover">Produits</a>
+      <a href="stories.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover">Success Stories</a>
+      <a href="articles.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover">Actualités</a>
+      <a href="contact.html" class="text-white py-2 px-4 rounded hover:bg-primary-hover">Contact</a>
+    </nav>
+  </div>
+</div>
+
+  <main id="contenu-principal">
     <section class="hero">
-      <section class="stats">
+      <section class="stats fade-in-on-scroll">
   <div class="stat">
     <h2>+100</h2>
     <p>Entrepreneurs inscrits</p>
@@ -62,19 +129,19 @@
   <!-- CARROUSEL D’IMAGES -->
   <div class="carousel">
     <div class="slide active">
-      <img src="images/agriculteurs-modernes-benin-b1.png" alt="Carrousel AgriStars Bénin – Image 1" width="1920" height="1080">
+      <img src="images/agriculteurs-modernes-benin-b1.png" alt="Agriculteurs modernes au Bénin utilisant des technologies digitales dans leurs champs" width="1920" height="1080" loading="eager">
     </div>
     <div class="slide">
-      <img src="images/produits-agricoles-phares-du-benin-b2.png" alt="Carrousel AgriStars Bénin – Image 2" width="1920" height="1080">
+      <img src="images/produits-agricoles-phares-du-benin-b2.png" alt="Produits agricoles phares du Bénin : ananas, manioc, céréales et légumes frais" width="1920" height="1080" loading="lazy">
     </div>
     <div class="slide">
-      <img src="images/cooperatives-agricoles-et-digitalisation-b3.png" alt="Carrousel AgriStars Bénin – Image 3" width="1920" height="1080">
+      <img src="images/cooperatives-agricoles-et-digitalisation-b3.png" alt="Coopératives agricoles béninoises et digitalisation du secteur agricole" width="1920" height="1080" loading="lazy">
     </div>
     <div class="slide">
-      <img src="images/investisseurs-agriculture-beninoise-b4.png" alt="Carrousel AgriStars Bénin – Image 4" width="1920" height="1080">
+      <img src="images/investisseurs-agriculture-beninoise-b4.png" alt="Investisseurs et partenaires étrangers dans une plantation d'ananas au Bénin" width="1920" height="1080" loading="lazy">
     </div>
     <div class="slide">
-      <img src="images/vallee-de-oueme-agriculture-b5.png" alt="Carrousel AgriStars Bénin – Image 5" width="1920" height="1080">
+      <img src="images/vallee-de-oueme-agriculture-b5.png" alt="Agriculture dans la vallée de l'Ouémé au Bénin, terroir fertile et production maraîchère" width="1920" height="1080" loading="lazy">
     </div>
   </div>
 
@@ -94,9 +161,13 @@
     Achetez directement à la source, sans intermédiaires.
   </p>
 </div>
-    <div class="cta-group">
-  <a href="entrepreneurs.html" class="btn primary">Voir les entrepreneurs</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1z4qgNNppb5-E8aVoe3dSqVKkwiz8bNQt5mAoJNYbAAXiCA/viewform" target="_blank" class="btn secondary">S’inscrire gratuitement</a>
+    <div class="cta-group flex flex-col sm:flex-row gap-3 justify-center items-center">
+  <a href="entrepreneurs.html" class="btn primary w-full sm:w-auto text-center">Voir les entrepreneurs</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1z4qgNNppb5-E8aVoe3dSqVKkwiz8bNQt5mAoJNYbAAXiCA/viewform" target="_blank" class="btn secondary w-full sm:w-auto text-center">S'inscrire gratuitement</a>
+  <a href="https://wa.me/2290161674360" target="_blank" rel="noopener" class="btn w-full sm:w-auto text-center bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2" aria-label="Contacter AgriStars sur WhatsApp">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Nous contacter sur WhatsApp
+  </a>
 </div>
   </div>
 
@@ -110,7 +181,7 @@
   </div>
 </section>
 
-    <section class="blocks container">
+    <section class="blocks container fade-in-on-scroll">
       <h2 class="section-title">Explorez la plateforme</h2>
       <a href="produits.html" class="block">
         <h2>Produits</h2>
@@ -160,6 +231,51 @@
       current = index;
       showSlide(current);
     });
+  });
+</script>
+<script>
+  // Menu hamburger mobile
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  hamburger.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu.classList.add('hidden');
+      hamburger.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      hamburger.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Fermer menu au clic sur un lien
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Fermer au clic sur l'overlay
+  mobileMenu.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) {
+      mobileMenu.classList.add('hidden');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+// Animation au scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+    observer.observe(el);
   });
 </script>
 </body>

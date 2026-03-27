@@ -21,7 +21,26 @@
 
   gtag('config', 'G-B9LWKY4MRM');
 </script>
-  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#1B4332',
+          'primary-hover': '#2D6A4F',
+          secondary: '#D4AF37',
+          'bg-light': '#F8FAF6',
+          'text-main': '#0D1F16',
+          'text-muted': '#4A6741',
+          'badge-green': '#D8F3DC',
+          'border-card': '#E8F4E8',
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="topbar">
@@ -39,6 +58,10 @@
 
   <main class="container">
     <h1>Annuaire des agripreneurs</h1>
+    <!-- Compteur dynamique -->
+    <p id="compteur-entrepreneurs" style="color:#4A6741; font-size:0.9rem; margin-bottom:1rem;" aria-live="polite" aria-atomic="true">
+  Chargement des entrepreneurs...
+</p>
     <div class="intro">
   <p>Trouvez rapidement les meilleurs producteurs agricoles du Bénin. Notre annuaire contient une liste d’agriculteurs, éleveurs et producteurs locaux dans tout le pays. Chaque producteur a sa fiche complète avec ses produits, prix, photos et contacts directs.</p>
   <p>Vous cherchez des tomates bio ? Du maïs en grande quantité ? De la viande fraîche ? Du poisson d'élevage ou autres produits agricoles locaux ? Utilisez notre moteur de recherche pour trouver exactement ce qu'il vous faut près de chez vous.</p>
@@ -57,7 +80,7 @@
     </div>
 
     <!-- Grille -->
-    <section id="grille" class="grid"></section>
+    <section id="grille" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></section>
   </main>
 
   <footer>
