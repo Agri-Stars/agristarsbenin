@@ -9,7 +9,7 @@ function sendLeadToTally(leadData) {
   const TALLY_WEBHOOK_URL = 'https://tally.so/r/obdeyO';
   
   // Si l'URL n'est pas configurée, on skip silencieusement
-  if (!TALLY_WEBHOOK_URL || TALLY_WEBHOOK_URL.includes('VOTRE_ID')) {
+  if (!TALLY_WEBHOOK_URL || TALLY_WEBHOOK_URL.includes('obdeyO')) {
     console.warn('Webhook Tally non configuré - leads non enregistrés');
     return;
   }
