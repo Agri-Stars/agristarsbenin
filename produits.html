@@ -95,7 +95,60 @@ Nos producteurs respectent les normes de qualité et proposent des prix compéti
     <!-- Grille -->
     <section id="grille-produits" class="grid"></section>
   </main>
-
+  <!-- ===== MODAL CAPTURE LEADS (PRODUITS) ===== -->
+  <div id="lead-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">&times;</button>
+      <h3 id="modal-title">Commander ce produit</h3>
+      <p class="modal-subtitle">Remplissez ce court formulaire pour contacter le producteur</p>
+      
+      <form id="lead-form">
+        <input type="hidden" id="lead-entrepreneur-id">
+        <input type="hidden" id="lead-entrepreneur-nom">
+        <input type="hidden" id="lead-produit">
+        <input type="hidden" id="lead-produit-nom">
+        
+        <div class="form-group"> 
+          <label for="lead-nom">Votre nom *</label>
+          <input type="text" id="lead-nom" name="nom" required placeholder="Ex: Marie Adjovi">
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-contact">Votre contact (WhatsApp ou Email) *</label>
+          <input type="text" id="lead-contact" name="contact" required placeholder="Ex: +229 01 XX XX XX XX">
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-type">Je cherche à *</label>
+          <select id="lead-type" name="type" required>
+            <option value="">Sélectionnez...</option>
+            <option value="Achat personnel">Achat pour usage personnel</option>
+            <option value="Achat revente">Achat pour revente</option>
+            <option value="Partenariat">Partenariat commercial</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-quantite">Quantité souhaitée (optionnel)</label>
+          <input type="text" id="lead-quantite" name="quantite" placeholder="Ex: 10kg, 1 caisse...">
+        </div>
+        
+        <div class="form-group checkbox">
+          <label>
+            <input type="checkbox" id="lead-consent" required>
+            J'accepte que mes données soient utilisées pour être mis en relation avec le producteur *
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-full">Continuer vers WhatsApp</button>
+      </form>
+      
+      <p class="modal-note">🔒 Vos données sont sécurisées et ne seront partagées qu'avec le producteur concerné</p>
+    </div>
+  </div>
+  
   <footer>
   <p>
     Partenaires :

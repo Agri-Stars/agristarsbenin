@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "nom": "Ananas bio extra",
-    "photo": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=500&q=60",
-    "prix": "700 FCFA/kg",
-    "categorie": "fruits",
-    "producteur": "Aurèle Agossou",
-    "whatsapp": "22997123456"
+    "nom": "Gari au lait de coco",
+    "photo": "images/Gari-au-lait-de-coco.png",
+    "prix": "1000 FCFA/kg",
+    "categorie": "dérivé de manioc",
+    "producteur": "DJOSSOU SÈMANTÊ FIACRE",
+    "whatsapp": "2290196528545"
   },
   {
     "id": 2,

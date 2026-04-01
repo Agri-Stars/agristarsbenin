@@ -119,6 +119,58 @@
     <!-- Grille -->
     <section id="grille" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></section>
   </main>
+    <!-- ===== MODAL CAPTURE LEADS ===== -->
+  <div id="lead-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">&times;</button>
+      <h3 id="modal-title">Contacter cet entrepreneur</h3>
+      <p class="modal-subtitle">Remplissez ce court formulaire pour être mis en relation</p>
+      
+      <form id="lead-form">
+        <input type="hidden" id="lead-entrepreneur-id">
+        <input type="hidden" id="lead-entrepreneur-nom">
+        <input type="hidden" id="lead-produit">
+        
+        <div class="form-group">
+          <label for="lead-nom">Votre nom *</label>
+          <input type="text" id="lead-nom" name="nom" required placeholder="Ex: Jean Kouassi">
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-contact">Votre contact (WhatsApp ou Email) *</label>
+          <input type="text" id="lead-contact" name="contact" required placeholder="Ex: +229 01 XX XX XX XX">
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-type">Je suis *</label>
+          <select id="lead-type" name="type" required>
+            <option value="">Sélectionnez...</option>
+            <option value="Acheteur">Acheteur de produits</option>
+            <option value="Partenaire">Partenaire commercial</option>
+            <option value="Investisseur">Investisseur</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="lead-message">Votre besoin (optionnel)</label>
+          <textarea id="lead-message" name="message" rows="3" placeholder="Ex: Je cherche 50kg de tomates par semaine..."></textarea>
+        </div>
+        
+        <div class="form-group checkbox">
+          <label>
+            <input type="checkbox" id="lead-consent" required>
+            J'accepte que mes données soient utilisées pour être mis en relation avec l'entrepreneur *
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-full">Continuer vers WhatsApp</button>
+      </form>
+      
+      <p class="modal-note">🔒 Vos données sont sécurisées et ne seront partagées qu'avec l'entrepreneur concerné</p>
+    </div>
+  </div>
 
   <footer>
   <p>
