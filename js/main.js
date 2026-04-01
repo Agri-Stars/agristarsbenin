@@ -6,7 +6,7 @@
  */
 function sendLeadToTally(leadData) {
   // URL du webhook Tally (À REMPLACER par la vôtre)
-  const TALLY_WEBHOOK_URL = 'https://tally.so/r/obdeyO';
+  const TALLY_WEBHOOK_URL = 'https://tally.so/webhook/obdeyO';
   
   // Si l'URL n'est pas configurée, on skip silencieusement
   if (!TALLY_WEBHOOK_URL || TALLY_WEBHOOK_URL.includes('obdeyO')) {
