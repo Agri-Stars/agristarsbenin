@@ -195,6 +195,7 @@ document.addEventListener('click', function(e) {
   document.getElementById('lead-entrepreneur-id').value = entrepreneur.id || '';
   document.getElementById('lead-entrepreneur-nom').value = entrepreneur.nom || '';
   document.getElementById('lead-produit').value = entrepreneur.activite || '';
+  document.getElementById('lead-entrepreneur-whatsapp').value = entrepreneur.whatsapp || '';
   
   // Afficher le modal
   openLeadModal(entrepreneur);
@@ -254,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const type = document.getElementById('lead-type').value;
     const message = document.getElementById('lead-message')?.value || '';
     const entrepreneurNom = document.getElementById('lead-entrepreneur-nom').value;
-    const entrepreneurWhatsapp = document.querySelector('.btn-contact-entrepreneur')?.dataset.whatsapp || '';
+    const entrepreneurWhatsapp = document.getElementById('lead-entrepreneur-whatsapp')?.value || '';
     
     // 1. Tracker l'événement dans GA4
     if (typeof gtag === 'function') {
@@ -282,7 +283,7 @@ const leadData = {
   consentement: true
 };
 
-sendLeadToTally(leadData);
+if (typeof window.sendLeadToTally === 'function') window.sendLeadToTally(leadData);
     
    // 3. Construire le message WhatsApp pré-rempli AVEC mention AgriStars
 // Utiliser %0A pour les sauts de ligne (compatible WhatsApp)

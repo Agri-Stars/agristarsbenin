@@ -111,14 +111,17 @@ document.addEventListener('click', function(e) {
   openLeadModal(produit);
 });
 
-// Initialisation quand le DOM est chargé
-document.addEventListener('DOMContentLoaded', function() {
-  const modal = document.getElementById('lead-modal');
-  if (!modal) {
-    console.warn('Modal non trouvé - assurez-vous qu\'il est dans produits.html');
-    return;
-  }
-  
+// ── CORRECTION : suppression du wrapper DOMContentLoaded ──────
+// Raison : ce script est chargé en type="module" (différé automatiquement
+// par le navigateur). Le DOM est donc déjà prêt à l'exécution du module.
+// Dans certains navigateurs, DOMContentLoaded a déjà été déclenché avant
+// que le listener ne soit enregistré → le submit n'était jamais attaché.
+
+const modal = document.getElementById('lead-modal');
+if (!modal) {
+  console.warn('Modal non trouvé - assurez-vous qu\'il est dans produits.html');
+} else {
+
   // Fermer au clic sur la croix
   const closeBtn = document.getElementById('modal-close');
   if (closeBtn) {
@@ -142,88 +145,96 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('lead-form');
   if (!form) {
     console.error('Formulaire non trouvé');
-    return;
-  }
-  
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Récupérer les valeurs (avec vérification)
-    const nomEl = document.getElementById('lead-nom');
-    const contactEl = document.getElementById('lead-contact');
-    const typeEl = document.getElementById('lead-type');
-    const quantiteEl = document.getElementById('lead-quantite');
-    const messageEl = document.getElementById('lead-message');
-    const produitNomEl = document.getElementById('lead-produit-nom');
-    const producteurNomEl = document.getElementById('lead-producteur-nom');
-    const producteurWhatsappEl = document.getElementById('lead-producteur-whatsapp');
-    
-    if (!nomEl || !contactEl || !typeEl || !produitNomEl || !producteurNomEl || !producteurWhatsappEl) {
-      console.error('Champs du formulaire manquants');
-      return;
-    }
-    
-    const nom = nomEl.value;
-    const contact = contactEl.value;
-    const type = typeEl.value;
-    const quantite = quantiteEl ? quantiteEl.value : '';
-    const message = messageEl ? messageEl.value : '';
-    const produitNom = produitNomEl.value;
-    const producteurNom = producteurNomEl.value;
-    const producteurWhatsapp = producteurWhatsappEl.value;
-    
-    // Tracker GA4
-    if (typeof gtag === 'function') {
-      gtag('event', 'product_lead_submit', {
-        'event_category': 'conversion',
-        'event_label': produitNom,
-        'product_name': produitNom,
-        'producer_name': producteurNom,
-        'visitor_type': type,
-        'quantity': quantite,
-        'value': 1
-      });
-    }
-    // 2. Envoyer le lead à Tally.so (Google Sheets)
-const leadData = {
-  date: new Date().toISOString(),
-  type_lead: 'Produit',
-  nom_visiteur: nom,
-  contact_visiteur: contact,
-  type_demande: type,
-  cible_nom: producteurNom,
-  cible_whatsapp: producteurWhatsapp,
-  quantite: quantite,
-  message: message,
-  source: document.referrer || 'Direct',
-  consentement: true
-};
+  } else {
 
-sendLeadToTally(leadData);
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Récupérer les valeurs (avec vérification)
+      const nomEl = document.getElementById('lead-nom');
+      const contactEl = document.getElementById('lead-contact');
+      const typeEl = document.getElementById('lead-type');
+      const quantiteEl = document.getElementById('lead-quantite');
+      const messageEl = document.getElementById('lead-message');
+      const produitNomEl = document.getElementById('lead-produit-nom');
+      const producteurNomEl = document.getElementById('lead-producteur-nom');
+      const producteurWhatsappEl = document.getElementById('lead-producteur-whatsapp');
+      
+      console.log('🔍 lead-nom:', nomEl);
+console.log('🔍 lead-contact:', contactEl);
+console.log('🔍 lead-type:', typeEl);
+console.log('🔍 lead-produit-nom:', produitNomEl);
+console.log('🔍 lead-producteur-nom:', producteurNomEl);
+console.log('🔍 lead-producteur-whatsapp:', producteurWhatsappEl);
 
-// 3. Construire le message WhatsApp...
-    // Construire le message WhatsApp
-    const whatsappMessage = 
-      `Bonjour ${producteurNom},%0A%0A` +
-      `Je vous contacte depuis AgriStars Bénin pour votre produit.%0A%0A` +
-      `🛒 Produit : ${produitNom}%0A` +
-      `👤 Nom : ${nom}%0A` +
-      `📞 Contact : ${contact}%0A` +
-      `🎯 Type : ${type}%0A` +
-      `📦 Quantité : ${quantite || 'Non précisée'}%0A` +
-      `💬 Message : ${message || 'Aucun'}%0A%0A` +
-      `--%0A` +
-      `Ce contact provient de la plateforme AgriStars Bénin%0A` +
-      `https://agri-stars.github.io/agristarsbenin`;
-    
-    // Ouvrir WhatsApp
-    const whatsappUrl = `https://wa.me/${producteurWhatsapp}?text=${whatsappMessage}`;
-    window.open(whatsappUrl, '_blank', 'noopener');
-    
-    // Fermer le modal
-    closeLeadModal();
-    
-    // Confirmation
-    alert('✅ Redirection vers WhatsApp...');
-  });
-});
+if (!nomEl || !contactEl || !typeEl || !produitNomEl || !producteurNomEl || !producteurWhatsappEl) {
+  console.error('Champs du formulaire manquants');
+  return;
+}
+      
+      const nom = nomEl.value;
+      const contact = contactEl.value;
+      const type = typeEl.value;
+      const quantite = quantiteEl ? quantiteEl.value : '';
+      const message = messageEl ? messageEl.value : '';
+      const produitNom = produitNomEl.value;
+      const producteurNom = producteurNomEl.value;
+      const producteurWhatsapp = producteurWhatsappEl.value;
+      
+      // Tracker GA4
+      if (typeof gtag === 'function') {
+        gtag('event', 'product_lead_submit', {
+          'event_category': 'conversion',
+          'event_label': produitNom,
+          'product_name': produitNom,
+          'producer_name': producteurNom,
+          'visitor_type': type,
+          'quantity': quantite,
+          'value': 1
+        });
+      }
+      // 2. Envoyer le lead à Tally.so (Google Sheets)
+      const leadData = {
+        date: new Date().toISOString(),
+        type_lead: 'Produit',
+        nom_visiteur: nom,
+        contact_visiteur: contact,
+        type_demande: type,
+        cible_nom: producteurNom,
+        cible_whatsapp: producteurWhatsapp,
+        quantite: quantite,
+        message: message,
+        source: document.referrer || 'Direct',
+        consentement: true
+      };
+
+      if (typeof window.sendLeadToTally === 'function') window.sendLeadToTally(leadData);
+
+      // 3. Construire le message WhatsApp...
+      // Construire le message WhatsApp
+      const whatsappMessage = 
+        `Bonjour ${producteurNom},%0A%0A` +
+        `Je vous contacte depuis AgriStars Bénin pour votre produit.%0A%0A` +
+        `🛒 Produit : ${produitNom}%0A` +
+        `👤 Nom : ${nom}%0A` +
+        `📞 Contact : ${contact}%0A` +
+        `🎯 Type : ${type}%0A` +
+        `📦 Quantité : ${quantite || 'Non précisée'}%0A` +
+        `💬 Message : ${message || 'Aucun'}%0A%0A` +
+        `--%0A` +
+        `Ce contact provient de la plateforme AgriStars Bénin%0A` +
+        `https://agri-stars.github.io/agristarsbenin`;
+      
+      // Ouvrir WhatsApp
+      const whatsappUrl = `https://wa.me/${producteurWhatsapp}?text=${whatsappMessage}`;
+      window.open(whatsappUrl, '_blank', 'noopener');
+      
+      // Fermer le modal
+      closeLeadModal();
+      
+      // Confirmation
+      alert('✅ Redirection vers WhatsApp...');
+    });
+
+  } // fin if form
+} // fin if modal
