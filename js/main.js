@@ -14,11 +14,12 @@ function sendLeadToTally(leadData) {
     return;
   }
   
-  // Envoyer les données via fetch
-  fetch(TALLY_WEBHOOK_URL, {
+  // APRÈS — contourne le CORS
+fetch(TALLY_WEBHOOK_URL, {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'text/plain',
     },
     body: JSON.stringify(leadData),
   })
